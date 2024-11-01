@@ -1,0 +1,139 @@
+<html>
+<head>
+<Title>My Ordered List</Title>
+</head>
+<body>
+
+<h3>The list below has my coding examples</h3>
+<ol>
+<li>Computer Definitions</li>
+<li>Tic Tac Toe Game</li>
+<li>Video Game Company Phone Numbers</li>
+<li>Pizza Ordering List</li>
+<li>Fonts Test</li>
+<li>Math Example</li>
+</ol>
+</body>
+</html>
+
+
+<html>
+<head>
+<Title>My Definition List</Title>
+</head>
+<body>
+<dl><b>Computer Definitions</b></dl>
+<dt><b>LAN</b></dt>
+<dd>Called local area network, it links computers in the same room to each other.</dd>
+<dt><b>WAN</b><dti>
+<dd>Called wide area network, it's a data network that links computers around a wide geographical area. It can also be used to connect computers together in cities and states in America. </dd>
+<dt><b>MAN</b><dt>
+<dd>Called metropolitan area network, a network that connects users with computer resources in a geographic area or region large than LAN but smaller than the area covered by WAN.</dd>
+</dl>
+</body>
+</html>
+
+
+<html>
+<head><b>Tic Tac Toe</b></head>
+<body>
+<p>
+<table border ="1">
+<tr>
+<td>O</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<td>X</td>
+<td>O</td>
+<td>O</td>
+</tr>
+<td>X</td>
+<td>O</td>
+<td>O</td>
+</tr>
+</table>
+</body>
+</html>
+
+<html>
+<head><b>Company's Name Phone Number</b></head>
+<body>
+<table>
+<tr>
+<td>Nintendo (425) 882-2040</td>
+</tr>
+<tr>
+<td>Sony 1 (800) 345-7669</td>
+</tr>
+<tr>
+<td>Microsoft 1 (800) 642-7676</td>
+</tr>
+<tr>
+<td>SEGA 1 (866) 226-8092</td>
+</tr>
+</tr>
+</table>
+</body>
+</html>
+
+<html>
+<head>
+<Title> Pizza Order </Title>
+</head>
+<body>
+<h1>Ordering Your Pizza</h1>
+<form>
+First Name: <input type= "text"><br>
+Last Name: <input type="text"><br>
+<p>What kind of Pizza Crust do you like?<p>
+<input type="radio"name="crust">Thin Crust<br>
+<input type="radio"name="crust">Hand Tossed<br>
+<input type="radio"name="crust">Pan Style<br>
+<input type="radio"name="crust">Stuffed Crust<br>
+<p>
+<p>What toppings do you want?<p>
+Sausage
+<input type="checkbox"name="Sausage">
+<br>
+Pepperoni
+<input type="checkbox"name="Pepperoni">
+<br>
+Chicken
+<input type="checkbox"name="Chicken">
+<br>
+Diced Tomatoes
+<input type="checkbox"name="Diced Tomatoes">
+<br>
+Green Pepper
+<input type="checkbox"name="Green Pepper">
+<br>
+Red Onion
+<input type="checkbox"name="Red Onion">
+<br>
+<input type="button"value="Done"><br>
+</form>
+</body>
+</html>
+
+<html>
+<head>
+<title> The Fonts </title>
+<style type="text/css">
+body {color:black;background: red}
+h2 {font-size: 200%};
+p.f1 {font-family: monospace ; font-size:small}
+p.f2 {font-family: cursive ; font-weight:200}
+</style>
+</head>
+<body>
+<h2> Font Family Test</h2>
+<p class="f1">This is monospace at relative size small.</p>
+<p class="f2">This is cursive in font-weight 200.</p>
+</body>
+
+<p><b>Math Equation Example</b></p>
+&quot x &plus; 3 &equals; 7 &quot<br>
+&quot x &plus; 3 &lt 9 &quot<br>
+
+</body>
