@@ -1,0 +1,48 @@
+def square(x):
+    y = x * x
+    return y
+
+toSquare = 100
+result = square(toSquare)
+print("The result of", toSquare, "squared is", result)
+
+from math import sqrt
+"Calls math to import the square root"
+print(" Please input lengths of shorter triangle sides:")
+"prints the text"
+a = float(input("a: "))
+b = float(input("b: "))
+"input for calculations"
+c = sqrt(a**2 + b**2)
+"more input for calculations"
+print("The length of the hypotenuse is", c )
+"Finalized printing the program for the hypotenuse of a right angled triangle"
+
+x = [1,10,20,30,40,50]
+"X function"
+y = ['a','b','c','d','e']
+"Y function"
+xy = zip(x,y)
+print (xy)
+for a,b in zip(x,y):
+    print(a)
+    print(b)
+"Computes the functions"
+
+x = [1,10,20,30,40]
+"X function"
+y = ['a','b','c','d']
+"Y function"
+xy = zip(x,y)
+print (xy)
+for a,b in zip(x,y):
+    print(a)
+    print(b)
+"Computes the functions"
+
+print("Input the lengths of shorter triangle sides:")
+a = float(input("a: "))
+b = float(input("b: "))
+c = float(a**2 + b**2)
+print("The length of the hypotenuse is", c )
+"Simple use of hypotenuse being calculated with a right angled triangle"
