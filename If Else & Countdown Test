@@ -1,0 +1,93 @@
+x = 100
+y = 200
+z = 300
+
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x is greater than y")
+elif z > y:
+    print("z is greater than y")
+elif z < y:
+    print("z is less than y")
+else:
+    print("x and y are equal")
+
+x=2
+y=1
+if x == y:
+    print (x, "and", y, "are equal")
+else:
+    if x < y:
+        print (x, "is less than", y)
+else:
+        print (x, "is greater than", y)
+
+# import the time module
+import time
+
+# define the countdown func.
+def countdown(t):
+
+    while t:
+        mins, secs = divmod(t, 60)
+        timer = '{:02d}:{:02d}'.format(mins, secs)
+        print(timer, end="\r")
+        time.sleep(1)
+        t -= 1
+
+    print('Blastoff!')
+
+
+# input time in seconds
+t = input("Enter the time in seconds: ")
+
+# function call
+countdown(int(t))
+
+# import the time module
+import time
+
+# define the countdown func.
+def countdown(t):
+
+    while t:
+        mins, secs = divmod(t, 60)
+        timer = '{:02d}:{:02d}'.format(mins, secs)
+        print(timer, end="\r")
+        time.sleep(1)
+        t -= 1
+
+    print('Blastoff!')
+
+
+# input time in seconds
+t = input("Enter the time in seconds: ")
+
+# function call
+countdown(int(t))
+
+# import the time module
+import time
+
+# define the countup func.
+def countup(t):
+
+    while t:
+        mins, secs = divmod(t, 60)
+        timer = '{:02d}:{:02d}'.format(mins, secs)
+        print(timer, end="\r")
+        time.sleep(1)
+        t -= 1
+
+    print('Blastoff!')
+
+
+# input time in seconds
+t = input("Enter the time in seconds: ")
+
+# function call
+countup(int(t))
+
+print(1/2)
+#Runtime error divison by zero, divide with other numbers instead.
