@@ -1,0 +1,202 @@
+#Dictionary testing*
+
+human = {"Names":["Bill","May"],"Their Hobbies":["Basketball","Football"],"Jobs":["Doctor", "Nurse"]}
+
+print(human)
+
+# From Section 11.5 of:
+# Downey, A. (2015). Think Python: How to think like a computer scientist. Needham, Massachusetts: Green Tree Press.
+
+def invert_dict(d):
+     inverse = dict()
+     for key in d:
+          val = d[key]
+          if val not in inverse:
+               inverse[val] = [key]
+          else:
+               inverse[val].append(key)
+     return inverse
+
+#Function Editing*
+
+def invert_dict_edited(d):
+     inverse = dict()
+     for key in d:
+         val = d[key]
+         for value in val:
+             if value not in inverse:
+                 inverse[value] = [key]
+             else:
+                 inverse[value].append(key)
+     return inverse
+
+#print(invert_dict(human)) Only for testing*
+
+print(invert_dict_edited(human)) #Prints out the lists*
+
+#Dictionary testing*
+
+human = {"Names":["Bill","May"],"Their Hobbies":["Basketball","Football"],"Jobs":["Doctor", "Nurse"]}
+
+print(human)
+
+# From Section 11.5 of:
+# Downey, A. (2015). Think Python: How to think like a computer scientist. Needham, Massachusetts: Green Tree Press.
+
+def invert_dict(d):
+     inverse = dict()
+     for key in d:
+          val = d[key]
+          if val not in inverse:
+               inverse[val] = [key]
+          else:
+               inverse[val].append(key)
+     return inverse
+
+#Function Editing*
+
+def invert_dict_edited(d):
+     inverse = dict()
+     for key in d:
+         val = d[key]
+         for value in val:
+             if value not in inverse:
+                 inverse[value] = [key]
+             else:
+                 inverse[value].append(key)
+     return inverse
+
+#print(invert_dict(human)) Only for testing*
+
+print(invert_dict_edited(human)) #Prints out the lists*
+
+#From Section 11.2 of:
+#Downey, A. (2015). Think Python: How to think like a computer scientist. Needham, Massachusetts: Green Tree Press.
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+test_dups = ["zzz","dog","bookkeeper","subdermatoglyphic","subdermatoglyphics"]
+
+test_miss = ["zzz","subdermatoglyphic","the quick brown fox jumps over the lazy dog"]
+
+def histogram(s):
+     d = dict()
+     for c in s:
+          if c not in d:
+               d[c] = 1
+          else:
+               d[c] += 1
+     return d
+
+def has_duplicates(s):
+    for v in histogram(s).values():
+        if v > 1:
+            return True
+    return False
+
+def test_dups_loop():
+    for s in test_dups:
+        print(s + ':', has_duplicates(s))
+
+def missing_letters(s):
+    r = list('abcdefghijklmnopqrstuvwxyz')
+    s = s.lower()
+    for c in s.lower():
+        if c in r:
+            r.remove(c)
+    return ''.join(r)
+
+def test_miss_loop():
+    for s in test_miss:
+        print(s + ':', missing_letters(s))
+
+def main():
+    test_dups_loop()
+    test_miss_loop()
+
+if __name__ == '__main__':
+    main()
+#From Section 11.2 of:
+#Downey, A. (2015). Think Python: How to think like a computer scientist. Needham, Massachusetts: Green Tree Press.
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+test_dups = ["zzz","dog","bookkeeper","subdermatoglyphic","subdermatoglyphics"]
+
+test_miss = ["zzz","subdermatoglyphic","the quick brown fox jumps over the lazy dog"]
+
+def histogram(s):
+     d = dict()
+     for c in s:
+          if c not in d:
+               d[c] = 1
+          else:
+               d[c] += 1
+     return d
+
+def has_duplicates(s):
+    for v in histogram(s).values():
+        if v > 1:
+            return True
+    return False
+
+def test_dups_loop():
+    for s in test_dups:
+        print(s + ':', has_duplicates(s))
+
+def missing_letters(s):
+    r = list('abcdefghijklmnopqrstuvwxyz')
+    s = s.lower()
+    for c in s.lower():
+        if c in r:
+            r.remove(c)
+    return ''.join(r)
+
+def test_miss_loop():
+    for s in test_miss:
+        print(s + ':', missing_letters(s))
+
+def main():
+    test_dups_loop()
+    test_miss_loop()
+
+if __name__ == '__main__':
+    main()
+#The differences between tuples with list and dictionaries is that tuples uses
+#different syntax, usually () for example. Unlikes list, the tuple can't be
+#changed or modified after being made. Also in general tuples can have smaller
+#size compared to lists. Compared to dictionaries which uses key-value pairs,
+#tumple and list are ordered collection of items.
+
+#Tuple Zip Example
+tuple1 = ("Nintendo", "Sony", "Microsoft")
+tuple2 = (1, 2, 3, 4, 5)
+tuple3 = ("Console", "Maker", "Companies")
+
+zip_result = zip(tuple1,tuple2,tuple3)
+
+for val in zip_result:
+    print(val)
+
+#Tuple Enumerate Function Example
+tuple4 = ("Morning","Afternoon","Night")
+
+for ele in enumerate(tuple4):
+    print (ele)
+print
+
+for count,ele in enumerate(tuple4,50):
+    print (count,ele)
+
+#Tuple Items Method Example
+tuple5 = {
+  "brand": "Nintendo",
+  "Console": "Nintendo Switch",
+  "year": 2017
+}
+
+x = tuple5.items()
+
+tuple5["year"] = 2017
+
+print(x)
