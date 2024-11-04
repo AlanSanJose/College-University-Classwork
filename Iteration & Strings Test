@@ -1,0 +1,179 @@
+# 1 The result would show only the first letter of string.
+
+def any_lowercase1(s):
+     for c in s:
+          if c.islower():
+               return True
+          else:
+               return False
+
+# 2 This would show a SynthaxError cause it can't assign to literal.
+
+def any_lowercase2(s):
+     for c in s:
+          if 'c'.islower():
+               return 'True'
+          else:
+               return 'False'
+
+# 3 The result would show only the last letter of string.
+
+def any_lowercase3(s):
+     for c in s:
+          flag = c.islower()
+     return flag
+
+# 4 This coding works as intended.
+
+def any_lowercase4(s):
+     flag = False
+     for c in s:
+          flag = flag or c.islower()
+     return flag
+
+# 5 Would return True if only all the letters are in lowercase.
+
+def any_lowercase5(s):
+     for c in s:
+          if not c.islower():
+               return False
+     return True
+
+sum = 0
+for i in range(10):
+    sum = sum + i
+    print(sum)
+
+for i in range(5):
+    print(i)
+a = "My first test string"
+b = 'Another test string that I have defined'
+c = "This is Sal's string"
+d = 'My favorite word is asparagus", what is yours?'
+math_string = "3+4*2"
+expression_string = "a+' '+b+' tiger'"
+
+prefixes = 'OQ'
+suffix = 'ack'
+
+for letter in prefixes:
+ print(letter + suffix)
+
+myList=["Food,Water"]
+for eachFood in myList:
+ print(eachFood)
+
+prefixes = 'Burger'
+suffix = 'Time'
+
+for letter in prefixes:
+    print(suffix + prefixes)
+
+A = ('School', 'College', 'University')
+result = slice(1,2)
+print(A[result])
+
+x = 100
+y = 100
+z = 100
+
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x is greater than y")
+elif z > y:
+    print("z is greater than y")
+else:
+    print("x and y are equal")
+
+def square_root(a):
+    x = float(a/2)
+    while True:
+     y = (x + a/x) / 2.0
+     if y == x:
+         break
+     x = y
+    return x
+
+import math
+
+def mysqrt(a):
+    x = a/5
+    while True:
+        y = (x+ a/x) / 2
+        if y == x:
+            return x
+        x = y
+
+def test_square_root():
+    a = 1.0
+    print('a', repr(mysqrt(a)).rjust(6), repr(math.sqrt(a)).rjust(12), 'diff'.rjust(10))
+    print("-      ---------            ------------          ----")
+    while a < 26.0:
+        print(a, "  ", mysqrt(a), "  ", math.sqrt(a), "  ", abs(mysqrt(a)-math.sqrt(a)))
+        a += 1
+
+test_square_root()
+
+Part 1:
+
+def square_root(a):
+    x = float(a/2)
+    while True:
+     y = (x + a/x) / 2.0
+     if y == x:
+         break
+     x = y
+    return x
+
+Part 2:
+
+import math
+
+def mysqrt(a):
+    x = a/5
+    while True:
+        y = (x+ a/x) / 2
+        if y == x:
+            return x
+        x = y
+
+def test_square_root():
+    a = 1.0
+    print('a', repr(mysqrt(a)).rjust(6), repr(math.sqrt(a)).rjust(12), 'diff'.rjust(10))
+    print("-      ---------            ------------          ----")
+    while a < 26.0:
+        print(a, "  ", mysqrt(a), "  ", math.sqrt(a), "  ", abs(mysqrt(a)-math.sqrt(a)))
+        a += 1
+
+test_square_root()
+
+#-------------------------------------------------------------------------------
+# Name:        module1
+# Purpose:
+#
+# Author:      Alan
+#
+# Created:     16/12/2020
+# Copyright:   (c) Alan 2020
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+#This while loop calculates the sum of 9 through 9 (including 9) and places
+#it in the variable "sum"
+sum = 0
+i = 0
+
+while i<10:
+    sum = sum + i
+    print(sum)
+    i = i + 1
+
+for i in range(10):
+    sum = sum + i
+    print(sum)
