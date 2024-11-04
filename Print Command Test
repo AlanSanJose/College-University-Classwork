@@ -1,0 +1,31 @@
+print_twice('Cheesecake')
+Cheesecake
+Cheesecake
+
+# three float values
+val1 = 100
+val2 = 200
+val3 = 300
+
+#Add three given numbers
+sum = float(val1) + float(val2) + float(val3)
+
+#Displaying results
+print("The sum is", sum)
+
+#-------------------------------------------------------------------------------
+pi = 3.1415926535897931
+r= 10.0
+V= 6.0/7.0*pi* r**3
+print('The volume of the sphere is: ',V)
+pi = 3.1415926535897931
+r= 8.0
+V= 4.0/3.0*pi* r**3
+print('The volume of the sphere is: ',V)
+pi = 3.1415926535897931
+r= 7.0
+V= 5.0/9.0*pi* r**3
+print('The volume of the sphere is: ',V)
+
+print("1 line\n2 line\n3 line\n4 line\n5 line\n6 line\n7 line\n8 line\n9 line\n10 line\n11 line\n12 line\n13 line\n14 line\n15 line\n16 line\n17 line\n18 line\n19 line\n20 line\n21 line\n22 line\n23 line\n24 line\n25 line")
+#found a different way on printing 25 lines but have a hard time understanding on how to print with def new_line():
