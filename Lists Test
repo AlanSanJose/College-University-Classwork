@@ -1,0 +1,96 @@
+for i in range(5):
+    print(i)
+
+#Dictionary testing*
+
+human = {"Names":["Bill","May"],"Their Hobbies":["Basketball","Football"],"Jobs":["Doctor", "Nurse"]}
+
+print(human)
+
+# From Section 11.5 of:
+# Downey, A. (2015). Think Python: How to think like a computer scientist. Needham, Massachusetts: Green Tree Press.
+
+def invert_dict(d):
+     inverse = dict()
+     for key in d:
+          val = d[key]
+          if val not in inverse:
+               inverse[val] = [key]
+          else:
+               inverse[val].append(key)
+     return inverse
+
+#Function Editing*
+
+def invert_dict_edited(d):
+     inverse = dict()
+     for key in d:
+         val = d[key]
+         for value in val:
+             if value not in inverse:
+                 inverse[value] = [key]
+             else:
+                 inverse[value].append(key)
+     return inverse
+
+#print(invert_dict(human)) Only for testing*
+
+print(invert_dict_edited(human)) #Prints out the lists*
+
+#Nested Lists
+A = ['a', 'b', 'c']
+print(A[2])
+
+#The “*” operator
+B = ['1', '2', '3']
+print(B[1*2])
+
+#List slices
+C = [1,2,3,4,5]
+D = C[1:5]
+print("Both Index =", D)
+E = C[:4]
+print("No First Index =", E)
+
+#The “+=” operator
+F = ['1', '2', '3']
+print(F[1+1])
+print(F[1==1])
+
+#List Filter
+def even(x):
+    return x % 2
+data = [1,2,3,4,5,6,7,8,9,10]
+number = list(filter(even,data))
+print(number)
+
+#A list operation that is legal but does the "wrong" thing. (Prints the list 3 times, suppose to print it once.)
+names = ["Alex", "Barney", "Zio"]
+[print(names) for n in names]
+
+s = "help"
+for letter in s[1:]:
+      last = letter
+      break
+print(last)
+
+a = [1, 2, -7, 9, 11]
+
+cheeses = ['Cheddar', 'Edam', 'Gouda']
+numbers = [42, 123]
+print(cheeses, numbers)
+['Cheddar', 'Edam', 'Gouda'][42,123]
+
+#This while loop caluculates the sum of 0 through 9 (including 9) and places
+#it in the variable "sum"
+sum = 0
+i = 0
+
+while i<10:
+    sum = sum + i
+    print (sum)
+    i = i + 1
+
+for i in range(10):
+    sum = sum + i
+    print (sum)
