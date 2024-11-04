@@ -1,0 +1,53 @@
+try:
+ fin = open('bad_file')
+except:
+ print('It went wrong')
+
+try:
+    d = open('ducks.txt')
+except IOError:
+    print('error')
+
+try:
+   fh = open("testfile", "r")
+   fh.write("Testing the file.")
+except IOError:
+   print("Error: cannot find the file or read the data.")
+else:
+   print ("Written data into the file.")
+
+#Dictionary testing*
+
+human = {"Names":["Bill","May"],"Their Hobbies":["Basketball","Football"],"Jobs":["Doctor", "Nurse"], "Food":["Apple","Orange"], "Shoe":["Air Jordan","Sneaker"], "Home":["House","Apartment"]}
+
+print(human)
+
+# From Section 11.5 of:
+# Downey, A. (2015). Think Python: How to think like a computer scientist. Needham, Massachusetts: Green Tree Press.
+
+def invert_dict(d):
+     inverse = dict()
+     for key in d:
+          val = d[key]
+          if val not in inverse:
+               inverse[val] = [key]
+          else:
+               inverse[val].append(key)
+     return inverse
+
+#Function Editing*
+
+def invert_dict_edited(d):
+     inverse = dict()
+     for key in d:
+         val = d[key]
+         for value in val:
+             if value not in inverse:
+                 inverse[value] = [key]
+             else:
+                 inverse[value].append(key)
+     return inverse
+
+#print(invert_dict(human)) Only for testing*
+
+print(invert_dict_edited(human)) #Prints out the lists*
