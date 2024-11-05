@@ -1,0 +1,22 @@
+package userinput;
+
+public class Actualparameter {
+
+    int c;
+
+    public void addition() {
+        int a = 12345;
+        int b = 420;
+        c = a + b;
+    }
+
+    public void result() {
+        System.out.println("The results of the addition above is " + c);
+    }
+
+    public static void main(String[] args) {
+        Actualparameter e = new Actualparameter();
+        e.addition();
+        e.result();
+    }
+}
