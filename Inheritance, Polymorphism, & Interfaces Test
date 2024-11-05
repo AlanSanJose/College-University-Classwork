@@ -1,0 +1,73 @@
+package userinput;
+import javax.swing.JOptionPane; 
+
+public class Question { 
+   public static void main(String[] args) { 
+     TrueFalseQuestion question = new 
+TrueFalseQuestion("Are Cows real?", 
+     "True", 
+     "False",
+     "a"); 
+     question.check(); 
+     question.showResults(); 
+     TrueFalseQuestion question1 = new 
+TrueFalseQuestion("Are Dragons real?", 
+     "True",  
+     "False",
+     "b"); 
+     question1.check(); 
+     question1.showResults(); 
+     TrueFalseQuestion question2 = new 
+TrueFalseQuestion("Are Chicken real?", 
+     "True", 
+     "False", 
+     "a");      
+     question2.check(); 
+     question2.showResults(); 
+ 
+  } 
+}  
+
+package userinput;
+import javax.swing.JOptionPane; 
+
+public class TrueFalseQuestion {    
+  static int nQuestions = 0; 
+  static int nCorrect = 0; 
+  String question; 
+  String correctAnswer; 
+  TrueFalseQuestion(String query, String a, String b, String answer) { 
+    question = query+"\n"; 
+    question += "A."+a+"\n"; 
+    question += "B."+b+"\n"; 
+    correctAnswer = answer; 
+    correctAnswer= correctAnswer.toUpperCase(); 
+  } 
+ 
+String ask() { 
+   while (true) { 
+     String answer = JOptionPane.showInputDialog(question); 
+     answer = answer.toUpperCase(); 
+     boolean valid = (answer.equals("A") || answer.equals("B")); 
+    if (valid) return answer; 
+     JOptionPane.showMessageDialog(null,"Invalid answer. Please enter A or B."); 
+   } 
+ } 
+  
+void check() { 
+   nQuestions++; 
+   String answer = ask(); 
+   if (answer.equals(correctAnswer)) { 
+     JOptionPane.showMessageDialog(null,"Correct!"); 
+     nCorrect++; 
+   } else { 
+     JOptionPane.showMessageDialog(null,"Incorrect. The correct answer is "+correctAnswer+"."); 
+   } 
+} 
+ 
+void showResults() { 
+  JOptionPane.showMessageDialog(null,nCorrect+" correct out of"+nQuestions+" questions"); 
+} 
+ 
+} 
+ 
