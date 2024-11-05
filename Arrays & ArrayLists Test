@@ -1,0 +1,30 @@
+package userinput;
+
+public class WrapperClass {
+
+
+public static void myMethod(Integer num){
+System.out.println(num);
+       }
+public static void main(String[] args) {
+          
+myMethod(76);
+       }
+    
+}
+
+package userinput;
+
+public class WrapperClass2 {
+
+public static void myMethod(int num){
+System.out.println(num);
+       }
+public static void main(String[] args) {
+           
+Integer inum = new Integer(12345);
+           
+myMethod(inum);
+        }   
+    
+}
