@@ -1,0 +1,219 @@
+1.
+<html>
+<body>
+<font color="#ff0000">1</font>
+<font color="#0000ff">2</font>
+<font color="#008000">3</font>
+<font color="#ffff00">4</font>
+<font color="#ffa500">5</font>
+<font color="#4b0082">6</font>
+<font color="#ee82ee">7</font>
+<font color="#ffc0cb">8</font>
+<font color="#800080">9</font>
+<font color="#a52a2a">10</font>
+</body>
+</html>
+2.
+<html>
+<body>
+1<sup>2</sup> = 1
+<br />
+2<sup>2</sup> = 4
+<br />
+3<sup>2</sup> = 9
+<br />
+4<sup>2</sup> = 16
+<br />
+5<sup>2</sup> = 25
+<br />
+6<sup>2</sup> = 36
+<br />
+7<sup>2</sup> = 49
+<br />
+8<sup>2</sup> = 64
+<br />
+9<sup>2</sup> = 81
+<br />
+10<sup>2</sup> = 100
+</body>
+</html>
+3.
+<html>
+<body>
+<b>Favorite Pokemon</b>
+<ol>
+<li>Garchomp</li>
+<li>Haxorus</li>
+<li>Charizard</li>
+</ol>
+<b>Console Makers</b>
+<ul type="circle">
+<li>Nintendo</li>
+<li>Sony</li>
+<li>Microsoft</li>
+</ul>
+</body>
+</html>
+4.
+<html>
+<body>
+<address>
+Dark<br />
+Ghost Avenue<br />
+P.O. Box 12345
+</address>
+<br /><br />
+<center>
+<address>
+John Doe<br />
+6000 Airport Land<br />
+Nowhere, Texas 12345
+</address>
+</center>
+</body>
+</html>
+5.
+<html>
+<body>
+<a href="#bottom">Click here to go down</a>
+<p>-----</p>
+<p>Go!</p>
+<p>----</p>
+<a href="#top">Click here to go up</a>
+<a name="bottom">Click up or down</a>
+</body>
+</html>
+6.
+<html>
+<head>
+<title>Links to the four websites</title>
+</head>
+<body>
+<a href="https://www.nintendo.com/"
+target="_blank">
+Nintendo
+</a>
+<br /><br />
+<a href="https://www.sega.com/" target="_blank">
+Sega
+</a>
+<br /><br />
+<a href="https://www.sony.com/en/" target="_blank">
+Sony
+</a>
+<br /><br />
+<a href="https://www.microsoft.com/en-us/" target="_blank">
+Microsoft
+</a>
+</body>
+</html>
+7.
+<html>
+<head>
+<title>Five different images</title>
+</head>
+<body>
+<img src="https://archives.bulbagarden.net/media/upload/f/fa/445Garchomp.png" alt="Garchomp" title="Garchomp" />
+<br /><br />
+<img src="https://archives.bulbagarden.net/media/upload/b/b2/445Garchomp-Mega.png" alt="Mega Garchomp" title="Mega Garcomp" />
+<br /><br />
+<img src="https://archives.bulbagarden.net/media/upload/b/b9/172Pichu.png" alt="Pichu" title="Pichu" />
+<br /><br />
+<img src="https://archives.bulbagarden.net/media/upload/0/0d/025Pikachu.png" alt="Pikachu" title="Pikachu" />
+<br /><br />
+<img src="https://archives.bulbagarden.net/media/upload/8/88/026Raichu.png" alt="Raichu" title="Raichu" />
+</body>
+</html>
+8.
+<html>
+<body>
+<img src="https://archives.bulbagarden.net/media/upload/a/ae/929Wiglett.png" width="200" height="200" alt="Wiglett" border="2" />
+</body>
+</html>
+9.
+<html>
+<body>
+<a href="https://archives.bulbagarden.net/media/upload/a/aa/928Farigiraf.png" target="_top">
+<img src="https://archives.bulbagarden.net/media/upload/a/aa/928Farigiraf.png" alt="Farigiraf" />
+</a>
+<p>
+Click on the image Pokemon Farigiraf to view it in website.
+</p>
+</body>
+</html>
+10.) Google
+<html>
+<body>
+<a href="https://www.google.com/" target="_blank">
+<img src="https://www.google.com/logos/doodles/2022/2022-world-cup-nov-29-6753651837110000.3-s.png" alt="Swan" />
+</a>
+</body>
+<p>
+Click on the image google to go to the google search engine.
+</p>
+</html>
+<html>
+<body>
+Pick 5 corporations and hunt down their current stock prices. Place them in a neatly arranged
+table with their name, symbol, last price, 52wk high, 52wk low and PE ratio. The end result should
+look like the following. Notice that he first column is aligned left and the rest are centered.
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<table cellspacing="0" cellpadding="2" border="0" align="center">
+<tr bgcolor="#f0bb00">
+<td align="center" colspan="6"><font size="5"><i><b>My Stocks</b></i></font></td>
+</tr>
+<tr>
+<td><font size="2"><b>NAME</b></font></td>
+<td align="center"><font size="2"><b>SYMBOL</b></font></td>
+<td align="center"><font size="2"><b>CURRENT</b></font></td>
+<td align="center"><font size="2"><b>52WK HI</b></font></td>
+<td align="center"><font size="2"><b>52WK LO</b></font></td>
+<td align="center"><font size="2"><b>P/E RATIO</b></font></td>
+</tr>
+<tr bgcolor="#ff0000">
+<td>Nintendo</td>
+<td align="center">OTCMKTS: NTDOY</td>
+<td align="center">$10.59</td>
+<td align="center">$13.52</td>
+<td align="center">$9.81</td>
+<td align="center">11.68</td>
+</tr>
+<tr>
+<td>Capcom</td>
+<td align="center">CCOEY: OTCMKTS</td>
+<td align="center">$15.33</td>
+<td align="center">$16.16</td>
+<td align="center">$10.60</td>
+<td align="center">23.46</td>
+</tr>
+<tr bgcolor="ff0000">
+<td>Square Enix</td>
+<td align="center">SQNXF: OTCMKTS</td>
+<td align="center">$45.00</td>
+<td align="center">$56.25</td>
+<td align="center">$38.42</td>
+<td align="center">12.9</td>
+</tr>
+<tr>
+<td>Activision Blizzard</td>
+<td align="center">ATVI: NASDAQ</td>
+<td align="center">$74.34</td>
+<td align="center">$86.90</td>
+<td align="center">$56.40</td>
+<td align="center">32.80</td>
+</tr>
+<tr bgcolor="ff0000">
+<td>EA</td>
+<td align="center">EA: NASDAQ</td>
+<td align="center">$127.59</td>
+<td align="center">$142.79</td>
+<td align="center">$109.24</td>
+<td align="center">29.10</td>
+</tr>
+</table>
+</body>
+</html>
