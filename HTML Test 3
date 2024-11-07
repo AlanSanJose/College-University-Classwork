@@ -1,0 +1,55 @@
+Question 1. Write a program in PHP using a ‘for’ loop to add all the integers
+between 0 and 50 and display the total.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$x = 0; //Uses variable x
+for($y=1;$y<50;$y++){ //Uses variable y and condition check
+$c = $x + $y; //Uses variable c
+echo "$x + $y = $c"."<br>";
+$x = $c; //Set variable x in value of variable c
+}
+?>
+
+</body>
+</html>
+
+Question 2. Write a PHP program to check if a person is eligible to vote using
+control structure. (Criteria: Minimum age required to vote is 18)
+
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+$age = 9; //Uses variable age
+echo "You are $age years old!"."<br>";
+if ($age >= 18){ //True or false
+echo "You are eligible to vote!"; //If true 
+}else{
+echo "You are not eligible to vote!"; // If false
+}
+?>
+
+</body>
+</html>
+
+Question 3. Write a PHP program to check whether a number is prime or not.
+
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+$number = 8; //Uses varibiable
+$div1 = $number/1; //Uses varibiable
+$remainder = $number%2; //Uses varibiable
+
+if ($div1 == $number and $remainder != 0){ //Check if true
+echo "$number is a prime number!"."<br>"; //If true
+}else{
+echo "$number is not a prime number!"; // if false
+}
+?>
+</body>
